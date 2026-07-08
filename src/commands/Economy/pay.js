@@ -8,8 +8,8 @@ import EconomyService from '../../services/economyService.js';
 
 export default {
     data: new SlashCommandBuilder()
-        .setName('pay')
-        .setDescription('Pay another user some of your cash')
+        .setName('Przelej')
+        .setDescription('Przelej komuś swoje pieniądze')
         .addUserOption(option =>
             option
                 .setName('user')

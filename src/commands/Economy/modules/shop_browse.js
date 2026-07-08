@@ -1,5 +1,5 @@
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType, EmbedBuilder, MessageFlags } from 'discord.js';
-import { shopItems } from '../../../config/shop/items.js';
+import { shopItems } from '../../../config/Sklep/items.js';
 import { getColor } from '../../../config/bot.js';
 import { logger } from '../../../utils/logger.js';
 
@@ -17,7 +17,7 @@ export default {
                 const embed = new EmbedBuilder()
                     .setTitle('Sklep')
                     .setColor(getColor('primary'))
-                    .setDescription('Use `/buy item_id:<id> quantity:<amount>` to purchase an item.');
+                    .setDescription('Use `/Kup item_id:<id> quantity:<amount>` to purchase an item.');
                 pageItems.forEach(item => {
                     embed.addFields({
                         name: `${item.name} (${item.id})`,

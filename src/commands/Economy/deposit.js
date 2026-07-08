@@ -6,7 +6,7 @@ import { InteractionHelper } from '../../utils/interactionHelper.js';
 
 export default {
     data: new SlashCommandBuilder()
-        .setName('deposit')
+        .setName('Wplac')
         .setDescription('Deposit money from your wallet into your bank')
         .addStringOption(option =>
             option

@@ -8,11 +8,11 @@ import { InteractionHelper } from '../../utils/interactionHelper.js';
 const SLUT_COOLDOWN = 100 * 60 * 1000;
 
 const SLUT_ACTIVITIES = [
-    { name: "Ukradnij paczki", min: 0, max: 99, risk: 0.0 },
-    { name: "Ukradnij Samochód", min: 0, max: 99, risk: 0.0 },
-    { name: "Zabierz torebke starszej kobiecie", min: 0, max: 99, risk: 0.0 },
-    { name: "Zabij kogoś", min: 0, max: 99, risk: 0.0 },
-    { name: "Ucieknij policji", min: 0, max: 99, risk: 0.0 },
+    { name: "Chciałeś ukraść paczki", min: 0, max: 99, risk: 0.0 },
+    { name: "Chciałeść ukraść samochód", min: 0, max: 99, risk: 0.0 },
+    { name: "Zabrałeś torebke starszej kobiecie ", min: 0, max: 99, risk: 0.0 },
+    { name: "Zabiłeś kogoś", min: 0, max: 99, risk: 0.0 },
+    { name: "Uciekłeś policji z napadu", min: 0, max: 99, risk: 0.0 },
 ];
 
 const POSITIVE_OUTCOMES = [

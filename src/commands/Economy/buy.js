@@ -10,8 +10,8 @@ const SHOP_ITEMS = shopItems;
 
 export default {
     data: new SlashCommandBuilder()
-        .setName('buy')
-        .setDescription('Buy an item from the shop')
+        .setName('kup')
+        .setDescription('Kup rzecz z sklepu')
         .addStringOption(option =>
             option
                 .setName('item_id')

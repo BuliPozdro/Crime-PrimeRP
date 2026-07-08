@@ -60,17 +60,17 @@ export default {
             })
                 .addFields(
                     {
-                        name: "💵 Cash",
+                        name: "",
                         value: `$${wallet.toLocaleString()}`,
-                        inline: true,
+                        inline: false,
                     },
                     {
-                        name: "🏦 Bank",
+                        name: "",
                         value: `$${bank.toLocaleString()} / $${maxBank.toLocaleString()}`,
-                        inline: true,
+                        inline: false,
                     },
                     {
-                        name: "💰 Total",
+                        name: "Balans",
                         value: `$${(wallet + bank).toLocaleString()}`,
                         inline: true,
                     }

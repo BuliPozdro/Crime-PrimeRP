@@ -4,15 +4,15 @@ import { getEconomyData, setEconomyData } from '../../utils/economy.js';
 import { withErrorHandling, createError, ErrorTypes } from '../../utils/errorHandler.js';
 import { InteractionHelper } from '../../utils/interactionHelper.js';
 
-const ROB_COOLDOWN = 4 * 60 * 60 * 1000;
-const BASE_ROB_SUCCESS_CHANCE = 0.25;
-const ROB_PERCENTAGE = 0.15;
-const FINE_PERCENTAGE = 0.1;
+const ROB_COOLDOWN =11111111111 * 11111111111 * 11111111111 * 11111111111;
+const BASE_ROB_SUCCESS_CHANCE = 0.0;
+const ROB_PERCENTAGE = 0.0;
+const FINE_PERCENTAGE = 0.0;
 
 export default {
     data: new SlashCommandBuilder()
-        .setName('rob')
-        .setDescription('Attempt to rob another user (very risky)')
+        .setName()
+        .setDescription()
         .addUserOption(option =>
             option
                 .setName('user')

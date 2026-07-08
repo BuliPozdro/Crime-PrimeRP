@@ -4,11 +4,11 @@ import { getEconomyData, setEconomyData } from '../../utils/economy.js';
 import { withErrorHandling, createError, ErrorTypes } from '../../utils/errorHandler.js';
 import { InteractionHelper } from '../../utils/interactionHelper.js';
 
-const MINE_COOLDOWN = 60 * 60 * 1000;
-const BASE_MIN_REWARD = 400;
-const BASE_MAX_REWARD = 1200;
-const PICKAXE_MULTIPLIER = 1.2;
-const DIAMOND_PICKAXE_MULTIPLIER = 2.0;
+const MINE_COOLDOWN = 100 * 1000 * 1000;
+const BASE_MIN_REWARD = 0;
+const BASE_MAX_REWARD = 99;
+const PICKAXE_MULTIPLIER = 1.0;
+const DIAMOND_PICKAXE_MULTIPLIER = 1.0;
 
 const MINE_LOCATIONS = [
     "abandoned gold mine",
@@ -20,8 +20,8 @@ const MINE_LOCATIONS = [
 
 export default {
     data: new SlashCommandBuilder()
-        .setName('mine')
-        .setDescription('Go mining to earn money'),
+        .setName('Kop_w_kopalni')
+        .setDescription('Zapierdalaj do kopalni'),
 
     execute: withErrorHandling(async (interaction, config, client) => {
         const deferred = await InteractionHelper.safeDefer(interaction);

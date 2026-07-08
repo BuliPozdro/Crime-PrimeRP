@@ -10,8 +10,8 @@ const SHOP_ITEMS = shopItems;
 
 export default {
     data: new SlashCommandBuilder()
-        .setName('inventory')
-        .setDescription('View your economy inventory'),
+        .setName('Ekwipunek ')
+        .setDescription('Zobacz swój ekwipunek'),
 
     execute: withErrorHandling(async (interaction, config, client) => {
         const deferred = await InteractionHelper.safeDefer(interaction);

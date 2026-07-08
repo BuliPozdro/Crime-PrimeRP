@@ -5,39 +5,33 @@ import { withErrorHandling, createError, ErrorTypes } from '../../utils/errorHan
 import { logger } from '../../utils/logger.js';
 import { InteractionHelper } from '../../utils/interactionHelper.js';
 
-const SLUT_COOLDOWN = 45 * 60 * 1000;
+const SLUT_COOLDOWN = 100 * 60 * 1000;
 
 const SLUT_ACTIVITIES = [
-    { name: "Cam Stream", min: 120, max: 450, risk: 0.2 },
-    { name: "Private Dance Session", min: 220, max: 700, risk: 0.25 },
-    { name: "After-Hours Club Host", min: 320, max: 900, risk: 0.3 },
-    { name: "VIP Companion Booking", min: 550, max: 1400, risk: 0.35 },
-    { name: "Exclusive Livestream", min: 850, max: 2200, risk: 0.4 },
+    { name: "Ukradnij paczki", min: 0, max: 99, risk: 0.0 },
+    { name: "Ukradnij Samochód", min: 0, max: 99, risk: 0.0 },
+    { name: "Zabierz torebke starszej kobiecie", min: 0, max: 99, risk: 0.0 },
+    { name: "Zabij kogoś", min: 0, max: 99, risk: 0.0 },
+    { name: "Ucieknij policji", min: 0, max: 99, risk: 0.0 },
 ];
 
 const POSITIVE_OUTCOMES = [
-    "Your stream blew up and tips poured in.",
-    "A VIP booking paid far above average.",
-    "Your after-hours shift was packed and profitable.",
-    "Premium requests came through and your payout jumped.",
+    "Ukradłeś paczki w których był warty sprzęt.",
+    "Ukradłes samochod w którym była torebka",
+    "W torebce była renta.",
+    "Uciekłes policji i zyskałeś pieniądze z napadu.",
 ];
 
 const FINE_OUTCOMES = [
-    "Venue security issued a compliance fine.",
-    "A moderation strike triggered a platform fee.",
-    "You were flagged and had to pay a penalty.",
+    
 ];
 
 const ROBBED_OUTCOMES = [
-    "A fake buyer chargeback wiped part of your earnings.",
-    "A scam booking cleaned out a chunk of your cash.",
-    "You got baited by a fraud account and lost money.",
+    
 ];
 
 const LOSS_OUTCOMES = [
-    "The set flopped and you had to cover operating costs.",
-    "You burned budget on prep and made no return.",
-    "The shift went sideways and left you in the red.",
+   
 ];
 
 function randomInt(min, max) {

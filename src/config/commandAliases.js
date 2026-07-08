@@ -4,19 +4,19 @@
  */
 
 export const commandAliases = {
-    'bal': 'balance',
-    'money': 'balance',
-    'cash': 'balance',
+    'bal': 'Balans',
+    '': '',
+    '': '',
 
     'dep': 'deposit',
     'with': 'withdraw',
-    'work': 'work',
-    'daily': 'daily',
-    'gamble': 'gamble',
+    'Ukradnij_Paczki': 'Ukradnij_Paczki',
+    '': '',
+    '': '',
     'bet': 'gamble',
-    'rob': 'rob',
-    'crime': 'crime',
-    'pay': 'pay',
+    '': '',
+    'Ukradnij_samochód': 'Ukradnij_samochód',
+    'Przelej': 'Przelej',
     'give': 'pay',
     'send': 'pay',
 
@@ -41,11 +41,11 @@ export const commandAliases = {
     'lb': 'leaderboard',
     'top': 'leaderboard',
 
-    'shop': 'shop',
-    'buy': 'buy',
-    'inventory': 'inventory',
-    'inv': 'inventory',
-    'items': 'inventory',
+    'Sklep': 'Sklep',
+    'Kup': 'Kup',
+    'Ekwipunek': 'Ekwipunek',
+    'Ekwipunek': 'Ekwipunek',
+    'Rzeczy': 'Ekwipunek',
 
     'user': 'userinfo',
     'avatar': 'avatar',
